@@ -1,0 +1,18 @@
+llm:
+  google:
+    provider: "google"
+    model_name: "gemini-2.5-flash"
+    model_kwargs:
+      temperature: 0.5
+      top_p: 0.9
+      max_output_tokens: 1024
+
+  groq:
+    provider: "groq"
+    model_name: "qwen/qwen3-32b"
+    model_kwargs:
+      temperature: 0.5
+      # top_p: 0.95
+      max_tokens: 1024
+  
+  token_limit: 100000
