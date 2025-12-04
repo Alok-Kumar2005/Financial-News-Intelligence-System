@@ -69,7 +69,7 @@ class VectorStoreManager:
     
     def find_duplicates(self, article: NewsArticle, threshold: float = None) -> List[Tuple[str, float]]:
         if threshold is None:
-            threshold = SIMILARITY_THRESHOLD
+            threshold = config.SIMILARITY_THRESHOLD
         
         try:
             query = f"{article.title}\n\n{article.content}"
