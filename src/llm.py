@@ -116,7 +116,7 @@ class LLMChainFactory:
 
 if __name__ == "__main__":
     async def test_async():
-        factory = LLMChainFactory(model_type="groq")
+        factory = LLMChainFactory(model_type="gemini")
         prompt = ChatPromptTemplate.from_messages([
             ("system", "You are a helpful assistant."),
             ("user", "{input}")

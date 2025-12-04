@@ -22,3 +22,5 @@ pytest
 pytest-asyncio
 pytest-cov
 loguru==0.7.3
+streamlit
+plotly
